@@ -1,8 +1,8 @@
 /* BAT offline support: the app, and anything you've already looked at, keep working with no signal. */
-const VERSION = '11525c129f';
+const VERSION = '8887524bda';
 const SHELL_CACHE = 'bat-shell-' + VERSION, DATA_CACHE = 'bat-data-v1', DATA_MAX = 300;
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/icon-192.png',
-  './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-32.png'];
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png',
+  './icon-512.png', './apple-touch-icon.png', './favicon-32.png'];
 
 self.addEventListener('install', e => {
   // cache:'reload' skips the HTTP cache, so a fresh deploy never installs a stale page
